@@ -10,5 +10,6 @@ export default defineConfig({
     port: 3000,
     host: true,
     open: true
-  }
+  },
+  base: '/repo-name/',
 }) 

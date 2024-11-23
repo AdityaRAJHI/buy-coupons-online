@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Header } from './components/Header';
 import Home from './pages/Home';
 import Coupons from './pages/Coupons';
@@ -14,7 +14,7 @@ import Stores from './pages/Stores';
 
 export function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <HashRouter>
       <ErrorBoundary>
         <Header />
         <Suspense fallback={<LoadingSpinner />}>
@@ -37,6 +37,6 @@ export function App() {
           </Routes>
         </Suspense>
       </ErrorBoundary>
-    </div>
+    </HashRouter>
   )
 } 
