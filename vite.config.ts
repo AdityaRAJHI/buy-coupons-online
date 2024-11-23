@@ -11,5 +11,5 @@ export default defineConfig({
     host: true,
     open: true
   },
-  base: '/repo-name/',
+  base: '/buy-coupons-online/',
 }) 
